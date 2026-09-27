@@ -1,0 +1,119 @@
+.component {
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--primary-navy);
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 35px;
+    width: 60px;  
+    object-fit: contain;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.nav-links a { color: white; text-decoration: none; }
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fdfdfd;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.card p { flex-grow: 1; }
+
+.pagination-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: #f1f3f5;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.pages { display: flex; gap: 8px; margin: 0 auto; }
+.page { padding: 6px 12px; background: white; border-radius: 4px; border: 1px solid #ccc; }
+.page.active { background: var(--primary-navy); color: white; }
+.results-count { margin-left: auto; font-size: 0.9rem; color: #666; }
+
+.comment {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.comment-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.comment-content { flex: 1; }
+.comment-author { font-weight: bold; margin-bottom: 4px; }
+.comment-text { margin: 0; line-height: 1.5; }
+
+.pricing-table {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pricing-plan {
+    flex: 1;
+    background: #fdfdfd;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pricing-plan.recommended {
+    padding: 35px 20px;
+    border: 2px solid var(--accent-red);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.badge { background: var(--accent-red); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+.price { font-size: 1.5rem; font-weight: bold; margin: 10px 0; }
